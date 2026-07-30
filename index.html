@@ -1,80 +1,158 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cricket Hub</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-<header>
-    <h1>Cricket Hub</h1>
-    <p>Your Home of Cricket News & Fixtures</p>
-</header>
+/* Header */
+header {
+    background-color: #0b3d91;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
 
-<nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#fixtures">Fixtures</a></li>
-        <li><a href="#players">Players</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+/* Navigation */
+nav {
+    background-color: #146c2e;
+}
 
-<section id="home" class="hero">
-    <h2>Welcome to Cricket Hub</h2>
-    <p>Latest cricket news, fixtures, and player updates.</p>
-    <button onclick="showMessage()">Click for Today's Update</button>
-</section>
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
 
-<section id="news">
-    <h2>Latest News</h2>
-    <div class="card">
-        <h3>Guyana Wins Exciting Match</h3>
-        <p>Guyana secured a thrilling victory in the final over against Barbados.</p>
-    </div>
-    <div class="card">
-        <h3>India Announces New Captain</h3>
-        <p>India has named a new captain ahead of the upcoming international series.</p>
-    </div>
-</section>
+nav ul li {
+    padding: 15px;
+}
 
-<section id="fixtures">
-    <h2>Upcoming Fixtures</h2>
-    <table>
-        <tr><th>Date</th><th>Match</th><th>Venue</th></tr>
-        <tr><td>02 Aug 2026</td><td>Guyana vs Barbados</td><td>Providence Stadium</td></tr>
-        <tr><td>05 Aug 2026</td><td>India vs Australia</td><td>Georgetown</td></tr>
-        <tr><td>10 Aug 2026</td><td>England vs Pakistan</td><td>London</td></tr>
-    </table>
-</section>
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-<section id="players">
-    <h2>Featured Players</h2>
-    <div class="player-container">
-        <div class="player-card"><h3>Shai Hope</h3><p>Batsman</p></div>
-        <div class="player-card"><h3>Virat Kohli</h3><p>Batsman</p></div>
-        <div class="player-card"><h3>Pat Cummins</h3><p>Bowler</p></div>
-    </div>
-</section>
+nav ul li a:hover {
+    text-decoration: underline;
+}
 
-<section id="contact">
-    <h2>Contact Us</h2>
-    <form id="contactForm">
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <textarea id="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-    <p id="formMessage"></p>
-</section>
+/* Sections */
+section {
+    padding: 20px;
+}
 
-<footer>
-    <p>&copy; 2026 Cricket Hub | All Rights Reserved</p>
-</footer>
+/* Hero */
+.hero {
+    text-align: center;
+    background: white;
+    padding: 40px 20px;
+}
 
-<script src="script.js"></script>
-</body>
-</html>
+.hero button {
+    padding: 10px 20px;
+    background-color: #0b3d91;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #082d6b;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #146c2e;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Player Cards */
+.player-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.player-card {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+    min-width: 180px;
+    text-align: center;
+}
+
+/* Contact Form */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #146c2e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0f5222;
+}
+
+/* Footer */
+footer {
+    background-color: #0b3d91;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .player-container {
+        flex-direction: column;
+    }
+}
