@@ -1,66 +1,35 @@
-<table class="fixtures-table">
-  <thead>
-    <tr>
-      <th>Date</th>
-      <th>Match</th>
-      <th>Venue</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>02 Aug 2026</td>
-      <td class="match-teams">Guyana Amazon Warriors vs Barbados Royals</td>
-      <td>Providence Stadium, Guyana</td>
-    </tr>
-    <tr>
-      <td>13 Aug 2026</td>
-      <td class="match-teams">Jamaica Kingsmen vs Guyana Amazon Warriors</td>
-      <td>Sabina Park, Jamaica</td>
-    </tr>
-    <tr>
-      <td>19 Aug 2026</td>
-      <td class="match-teams">Saint Lucia Kings vs Guyana Amazon Warriors</td>
-      <td>Daren Sammy Cricket Ground, St Lucia</td>
-    </tr>
-    <tr>
-      <td>23 Aug 2026</td>
-      <td class="match-teams">Antigua & Barbuda Falcons vs Guyana Amazon Warriors</td>
-      <td>Sir Vivian Richards Stadium, Antigua</td>
-    </tr>
-    <tr>
-      <td>31 Aug 2026</td>
-      <td class="match-teams">Trinbago Knight Riders vs Guyana Amazon Warriors</td>
-      <td>Queen's Park Oval, Trinidad</td>
-    </tr>
-    <tr>
-      <td>04 Sep 2026</td>
-      <td class="match-teams">Guyana Amazon Warriors vs Jamaica Kingsmen</td>
-      <td>Providence Stadium, Guyana (Home)</td>
-    </tr>
-    <tr>
-      <td>06 Sep 2026</td>
-      <td class="match-teams">Guyana Amazon Warriors vs St Kitts & Nevis Patriots</td>
-      <td>Providence Stadium, Guyana (Home)</td>
-    </tr>
-    <tr>
-      <td>08 Sep 2026</td>
-      <td class="match-teams">Guyana Amazon Warriors vs Antigua & Barbuda Falcons</td>
-      <td>Providence Stadium, Guyana (Home)</td>
-    </tr>
-    <tr>
-      <td>09 Sep 2026</td>
-      <td class="match-teams">Guyana Amazon Warriors vs Saint Lucia Kings</td>
-      <td>Providence Stadium, Guyana (Home)</td>
-    </tr>
-    <tr>
-      <td>11 Sep 2026</td>
-      <td class="match-teams">Guyana Amazon Warriors vs Trinbago Knight Riders</td>
-      <td>Providence Stadium, Guyana (Home)</td>
-    </tr>
-    <tr>
-      <td>13 Sep 2026</td>
-      <td class="match-teams">Barbados Royals vs Guyana Amazon Warriors</td>
-      <td>Kensington Oval, Barbados</td>
-    </tr>
-  </tbody>
-</table>
+<form class="gaw-contact-form" action="#" method="POST">
+  <div class="form-group">
+    <label for="fan-name">Full Name</label>
+    <input type="text" id="fan-name" name="name" placeholder="Your First & Last Name" required>
+  </div>
+
+  <div class="form-group">
+    <label for="fan-email">Email Address</label>
+    <input type="email" id="fan-email" name="email" placeholder="name@email.com" required>
+  </div>
+
+  <div class="form-group">
+    <label for="fan-phone">Phone Number (Optional)</label>
+    <input type="tel" id="fan-phone" name="phone" placeholder="+592-XXX-XXXX">
+  </div>
+
+  <div class="form-group">
+    <label for="form-reason">Reason for Contact</label>
+    <select id="form-reason" name="reason" required>
+      <option value="" disabled selected>Select an option...</option>
+      <option value="tickets">Match Day Tickets & Hospitality</option>
+      <option value="merchandise">Official Team Kit & Merchandise</option>
+      <option value="sponsorship">Sponsorship & Corporate Inquiries</option>
+      <option value="media">Media & Press Passes</option>
+      <option value="general">General Fan Inquiry</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="fan-message">Your Message</label>
+    <textarea id="fan-message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+  </div>
+
+  <button type="submit" class="submit-btn">Send Message</button>
+</form>
