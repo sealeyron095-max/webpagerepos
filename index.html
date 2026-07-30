@@ -1,12 +1,68 @@
-<table>
-    <tr>
-        <th>Date</th>
-        <th>Match</th>
-        <th>Venue</th>
-    </tr>
-    <tr>
-        <td>02 Aug 2026</td>
-        <td>Guyana vs Barbados</td>
-        <td>Providence Stadium</td>
-    </tr>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Reused Navbar Component -->
+    <nav class="navbar">
+        <div class="logo">ClubLogo</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="news.html" class="active">News</a>
+            <a href="fixtures.html">Fixtures</a>
+            <a href="players.html">Players</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <!-- News Grid Container -->
+    <main class="news-container">
+        <h1>Latest News</h1>
+        <p class="subtitle">Fresh updates from around the stadium and training grounds</p>
+
+        <div class="news-grid">
+            <!-- News Article 1 -->
+            <article class="news-card">
+                <div class="news-image"></div>
+                <div class="news-content">
+                    <span class="news-tag match">Match Report</span>
+                    <span class="news-date">July 30, 2026</span>
+                    <h3>Stunning Comeback Secures Three Points</h3>
+                    <p>The team rallied from two goals down in the second half to secure a sensational victory on home turf.</p>
+                    <a href="#" class="read-more">Read Full Story &rarr;</a>
+                </div>
+            </article>
+
+            <!-- News Article 2 -->
+            <article class="news-card">
+                <div class="news-image"></div>
+                <div class="news-content">
+                    <span class="news-tag transfer">Transfers</span>
+                    <span class="news-date">July 28, 2026</span>
+                    <h3>New Striker Signs Long-Term Contract</h3>
+                    <p>We are delighted to announce the official signing of an elite forward to bolster our attacking choices.</p>
+                    <a href="#" class="read-more">Read Full Story &rarr;</a>
+                </div>
+            </article>
+
+            <!-- News Article 3 -->
+            <article class="news-card">
+                <div class="news-image"></div>
+                <div class="news-content">
+                    <span class="news-tag training">Training</span>
+                    <span class="news-date">July 25, 2026</span>
+                    <h3>Squad Departs for Summer Training Camp</h3>
+                    <p>The first-team roster has traveled out today to begin intensive physical and tactical preparations.</p>
+                    <a href="#" class="read-more">Read Full Story &rarr;</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+</body>
+</html>
