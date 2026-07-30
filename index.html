@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Cricket Hub</h1>
+    <p>Your Home of Cricket News & Fixtures</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#fixtures">Fixtures</a></li>
+        <li><a href="#players">Players</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="home" class="hero">
+    <h2>Welcome to Cricket Hub</h2>
+    <p>Latest cricket news, fixtures, and player updates.</p>
+    <button onclick="showMessage()">Click for Today's Update</button>
+</section>
+
+<section id="news">
+    <h2>Latest News</h2>
+    <div class="card">
+        <h3>Guyana Wins Exciting Match</h3>
+        <p>Guyana secured a thrilling victory in the final over against Barbados.</p>
+    </div>
+    <div class="card">
+        <h3>India Announces New Captain</h3>
+        <p>India has named a new captain ahead of the upcoming international series.</p>
+    </div>
+</section>
+
+<section id="fixtures">
+    <h2>Upcoming Fixtures</h2>
+    <table>
+        <tr><th>Date</th><th>Match</th><th>Venue</th></tr>
+        <tr><td>02 Aug 2026</td><td>Guyana vs Barbados</td><td>Providence Stadium</td></tr>
+        <tr><td>05 Aug 2026</td><td>India vs Australia</td><td>Georgetown</td></tr>
+        <tr><td>10 Aug 2026</td><td>England vs Pakistan</td><td>London</td></tr>
+    </table>
+</section>
+
+<section id="players">
+    <h2>Featured Players</h2>
+    <div class="player-container">
+        <div class="player-card"><h3>Shai Hope</h3><p>Batsman</p></div>
+        <div class="player-card"><h3>Virat Kohli</h3><p>Batsman</p></div>
+        <div class="player-card"><h3>Pat Cummins</h3><p>Bowler</p></div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    <p id="formMessage"></p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Cricket Hub | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
