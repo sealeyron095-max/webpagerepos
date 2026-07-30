@@ -1,35 +1,19 @@
-<form class="gaw-contact-form" action="#" method="POST">
-  <div class="form-group">
-    <label for="fan-name">Full Name</label>
-    <input type="text" id="fan-name" name="name" placeholder="Your First & Last Name" required>
-  </div>
+<nav class="gaw-navbar">
+  <div class="gaw-nav-container">
+    <div class="gaw-logo-text">Amazon Warriors</div>
+    
+    <!-- Tap trigger element for mobile users -->
+    <button class="menu-toggle-btn" aria-label="Open Menu">
+      &#9776; <!-- Pure CSS 3-line hamburger icon character -->
+    </button>
 
-  <div class="form-group">
-    <label for="fan-email">Email Address</label>
-    <input type="email" id="fan-email" name="email" placeholder="name@email.com" required>
+    <div class="gaw-nav-links" id="navMenu">
+      <a href="index.html" class="gaw-link active">Home</a>
+      <a href="news.html" class="gaw-link">Warriors News</a>
+      <a href="fixtures.html" class="gaw-link">CPL 2026 Fixtures</a>
+      <a href="squad.html" class="gaw-link">The Squad</a>
+      <a href="tickets.html" class="gaw-link">Get Tickets</a>
+      <a href="contact.html" class="gaw-link">Contact</a>
+    </div>
   </div>
-
-  <div class="form-group">
-    <label for="fan-phone">Phone Number (Optional)</label>
-    <input type="tel" id="fan-phone" name="phone" placeholder="+592-XXX-XXXX">
-  </div>
-
-  <div class="form-group">
-    <label for="form-reason">Reason for Contact</label>
-    <select id="form-reason" name="reason" required>
-      <option value="" disabled selected>Select an option...</option>
-      <option value="tickets">Match Day Tickets & Hospitality</option>
-      <option value="merchandise">Official Team Kit & Merchandise</option>
-      <option value="sponsorship">Sponsorship & Corporate Inquiries</option>
-      <option value="media">Media & Press Passes</option>
-      <option value="general">General Fan Inquiry</option>
-    </select>
-  </div>
-
-  <div class="form-group">
-    <label for="fan-message">Your Message</label>
-    <textarea id="fan-message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
-  </div>
-
-  <button type="submit" class="submit-btn">Send Message</button>
-</form>
+</nav>
